@@ -1,0 +1,72 @@
+body {
+  margin: 10px;
+  padding: 0px;
+  height: 100%;
+}
+
+.containerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar {
+  background-color: #ada6a6;
+  padding: 3px;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.navbar li:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+/* unvisited link */
+.navbar a:link {
+  color: #32a852;
+  text-decoration: none;
+}
+
+/* visited link */
+.navbar a:visited {
+  color: #32a852;
+}
+
+/* mouse over link */
+.navbar a:hover {
+  color: #20d651;
+}
+
+/* selected link */
+.navbar a:active {
+  color: #20d651;
+}

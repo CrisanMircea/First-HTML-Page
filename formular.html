@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Formular</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="formular.html">Formular</a></li>
+        <li><a href="tabele.html">Tabele</a></li>
+        <li><a href="despre.html">Despre</a></li>
+        <li><a href="index.html">Acasa</a></li>
+      </ul>
+    </div>
+    <div class="center">
+      <h1>Formular de inscriere</h1>
+    </div>
+    <hr />
+    <form>
+      <label for="human">Numele:</label>
+      <input
+        type="text"
+        placeholder="doar litere mici"
+        id="caine"
+        name="nume"
+      />
+      <br />
+      <label for="sumaMaxima">Suma maxima:</label>
+      <input
+        type="number"
+        placeholder="Suma maxima"
+        id="sumaMaxima"
+        name="sumaMaxima"
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        placeholder="Introduceti email"
+        name="email"
+        id="email"
+      />
+      <br />
+      <label for="parola">Parola:</label>
+      <input
+        type="password"
+        placeholder="Introduceti Parola"
+        name="parola"
+        id="parola"
+      />
+
+      <p>
+        <label for="bifaCampanie">Trimite campanii de marketing pe email</label>
+        <input type="checkbox" id="bifaCampanie" name="campanie" />
+      </p>
+      <div>
+        <label>Sunteti de acord cu procesarea datelor personale?</label>
+        <br />
+        <label for="procesareDate1">Da</label>
+        <input
+          type="radio"
+          name="procesareDate"
+          id="procesareDate1"
+          value="da"
+        />
+        <label for="procesareDate2">Nu</label>
+        <input
+          type="radio"
+          name="procesareDate"
+          id="procesareDate2"
+          value="nu"
+        />
+      </div>
+      <!-- <input type="submit" value="Trimite" /> -->
+      <button>Trimite</button>
+      <button type="button">Nu trimite</button>
+    </form>
+  </body>
+</html>
