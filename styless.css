@@ -2,6 +2,8 @@ body {
   margin: 10px;
   padding: 0px;
   height: 100%;
+  font-family: "Trirong", serif;
+  background-image: url("backgroundImg\ \(2\).jpg");
 }
 
 .containerImage {
@@ -12,6 +14,7 @@ body {
 
 .text {
   font-size: 100%;
+  margin: 10px;
 }
 
 img {
@@ -20,30 +23,32 @@ img {
 }
 
 .navbar {
-  background-color: #ada6a6;
-  padding: 3px;
+  display: flex;
+  padding: 4px;
   position: sticky;
   top: 0px;
   z-index: 3;
+  background-image: url("navbarImg.jpg");
+  height: 75px;
 }
 
 .navbar ul {
-  list-style-type: none;
+  list-type: none;
   display: flex;
-  gap: 10px;
+  gap:150px;
   flex-direction: row-reverse;
   font-size: 24px;
   justify-content: space-evenly;
+  text-align: center;
+  margin:auto;
 }
 
 .navbar li {
+  display: flex;
   padding: 5px;
-  margin-left: 10px;
-}
-
-.navbar li:hover {
-  color: blue;
-  cursor: pointer;
+  margin-left: 10px
+  justify-content: center;
+  text-align: center;
 }
 
 .center {
@@ -52,21 +57,66 @@ img {
 
 /* unvisited link */
 .navbar a:link {
-  color: #32a852;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* visited link */
 .navbar a:visited {
-  color: #32a852;
+  color: #ffffff;
 }
 
 /* mouse over link */
 .navbar a:hover {
-  color: #20d651;
+  color: #014a14;
 }
 
 /* selected link */
 .navbar a:active {
-  color: #20d651;
+  color: #029e2a;
+}
+
+.borderTable {
+  border: white;
+  border-style: groove;
+}
+
+.flex {
+  display:flex;
+}
+
+@media screen {
+  min-width: 320px;
+}
+
+@media screen {
+  min-width: 375px;
+}
+
+@media screen {
+  min-width: 425px;
+}
+
+@media screen {
+  min-width: 600px;
+}
+
+@media screen {
+  min-width: 982;
+}
+
+@media screen {
+  min-width: 1024px;
+}
+
+@media screen {
+  min-width: 1440px;
+}
+
+@media screen {
+  min-width: 1920px;
+}
+
+@media screen {
+  min-width: 2560px;
 }
