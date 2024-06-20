@@ -47,15 +47,15 @@
       </div>
     </div>
     <h2>Flexbox</h2>
-    <h3>Properties for the Parent (flex container):</h3>
+    <h3>Proprietăți pentru părinte (container flexibil):</h3>
     <h4>display</h4>
     <div class="containerImage">
       <div class="text">
         <p>
-          This defines a flex container; inline or block depending on the given
-          value. It enables a flex context for all its direct children.
+          Aceasta definește un container flexibil; inline sau bloc în funcție de date
+          valoare. Permite un context flexibil pentru toți copiii săi direcți.
         </p>
-        <p>Note that CSS columns have no effect on a flex container.</p>
+        <p>Rețineți că coloanele CSS nu au niciun efect asupra unui container flexibil.</p>
       </div>
       <div>
         <img src="displayFlexbox.png" />
@@ -63,18 +63,19 @@
     </div>
     <h4>flex-direction</h4>
     <p>
-      This establishes the main-axis, thus defining the direction flex items are
-      placed in the flex container. Flexbox is (aside from optional wrapping) a
-      single-direction layout concept. Think of flex items as primarily laying
-      out either in horizontal rows or vertical columns.
+      Aceasta stabilește axa principală, definind astfel direcția în care sunt elementele flexibile
+      plasat în containerul flexibil. Flexbox este (în afară de ambalarea opțională) a
+      conceptul de layout cu o singură direcție. Gândiți-vă la articolele flexibile ca fiind în primul rând așezare
+      fie în rânduri orizontale, fie în coloane verticale.
     </p>
     <div class="containerImage">
       <div class="text">
         <ul>
-          <li>row (default): left to right in ltr; right to left in rtl</li>
-          <li>row-reverse: right to left in ltr; left to right in rtl</li>
-          <li>column: same as row but top to bottom</li>
-          <li>column-reverse: same as row-reverse but bottom to top</li>
+          <li>row (default): de la stânga la dreapta în ltr; dreapta la stânga în rtl</li>
+          <li>row-reverse: 
+            dreapta la stânga în ltr; de la stânga la dreapta în rtl</li>
+          <li>column: la fel ca și row, dar de sus în jos</li>
+          <li>column-reverse: la fel ca row-reverse, dar de jos în sus</li>
         </ul>
       </div>
       <div>
@@ -83,19 +84,19 @@
     </div>
     <h4>flex-wrap</h4>
     <p>
-      By default, flex items will all try to fit onto one line. You can change
-      that and allow the items to wrap as needed with this property.
+      În mod implicit, elementele flexibile vor încerca toate să se potrivească pe o singură linie. Te poți schimba
+      asta și permiteți articolelor să se împacheteze după cum este necesar cu această proprietate.
     </p>
     <div class="containerImage">
       <div class="text">
         <ul>
-          <li>nowrap (default): all flex items will be on one line</li>
+          <li>nowrap (default): toate articolele flexibile vor fi pe o singură linie.</li>
           <li>
-            wrap: flex items will wrap onto multiple lines, from top to bottom.
+            wrap: articolele flex se vor înfășura pe mai multe linii, de sus în jos.
           </li>
           <li>
-            wrap-reverse: flex items will wrap onto multiple lines from bottom
-            to top.
+            wrap-reverse: articolele flex se vor înfășura pe mai multe linii de jos
+            sus.
           </li>
         </ul>
       </div>
@@ -107,9 +108,8 @@
     <div class="containerImage">
       <div class="text">
         <p>
-          This is a shorthand for the flex-direction and flex-wrap properties,
-          which together define the flex container’s main and cross axes. The
-          default value is row nowrap.
+          Aceasta este o prescurtare pentru proprietățile flex-direction și flex-wrap,
+          care împreună definesc axele principale și transversale ale containerului flexibil. Valoarea implicită este row nowrap.
         </p>
       </div>
       <div>
@@ -118,55 +118,41 @@
     </div>
     <h4>justify-content</h4>
     <p>
-      This defines the alignment along the main axis. It helps distribute extra
-      free space leftover when either all the flex items on a line are
-      inflexible, or are flexible but have reached their maximum size. It also
-      exerts some control over the alignment of items when they overflow the
-      line.
+      Aceasta definește alinierea de-a lungul axei principale. Ajută la distribuirea spațiului liber suplimentar rămas atunci când sunt toate elementele flexibile de pe o linie
+      inflexibile sau sunt flexibile, dar au atins dimensiunea maximă. De asemenea, exercită un anumit control asupra alinierii elementelor atunci când acestea depășesc
+      linia.
     </p>
     <div class="containerImage">
       <div class="text">
         <ul>
           <li>
-            flex-start (default): items are packed toward the start of the
+            flex-start (default): articolele sunt ambalate spre începutul
             flex-direction.
           </li>
           <li>
-            flex-end: items are packed toward the end of the flex-direction.
+            flex-end: articolele sunt împachetate spre sfârșitul flex-direction.
           </li>
           <li>
-            start: items are packed toward the start of the writing-mode
-            direction.
+            start: articolele sunt împachetate spre începutul direcției modului de scriere.
           </li>
           <li>
-            end: items are packed toward the end of the writing-mode direction.
+            end: articolele sunt împachetate spre sfârșitul direcției modului de scriere.
           </li>
           <li>
-            left: items are packed toward left edge of the container, unless
-            that doesn’t make sense with the flex-direction, then it behaves
-            like start.
+            left: articolele sunt împachetate spre marginea stângă a containerului, cu excepția cazului în care acest lucru nu are sens cu direcția flexibilă, atunci se comportă ca la început.
           </li>
           <li>
-            right: items are packed toward right edge of the container, unless
-            that doesn’t make sense with the flex-direction, then it behaves
-            like end.
+            right: articolele sunt împachetate spre marginea dreaptă a containerului, cu excepția cazului în care acest lucru nu are sens cu direcția flexibilă, atunci se comportă ca la capăt.
           </li>
-          <li>center: items are centered along the line</li>
+          <li>center: elementele sunt centrate de-a lungul liniei</li>
           <li>
-            space-between: items are evenly distributed in the line; first item
-            is on the start line, last item on the end line
+            space-between: articolele sunt distribuite uniform pe linie; primul articol este pe linia de început, ultimul element pe linia finală
           </li>
           <li>
-            space-around: items are evenly distributed in the line with equal
-            space around them. Note that visually the spaces aren’t equal, since
-            all the items have equal space on both sides. The first item will
-            have one unit of space against the container edge, but two units of
-            space between the next item because that next item has its own
-            spacing that applies.
+            space-around: articolele sunt distribuite uniform pe linie cu spațiu egal în jurul lor. Rețineți că vizual spațiile nu sunt egale, deoarece toate elementele au spațiu egal pe ambele părți. Primul articol va avea o unitate de spațiu pe marginea containerului, dar două unități de spațiu între următorul articol, deoarece următorul articol are propria sa spațiere care se aplică.
           </li>
           <li>
-            space-evenly: items are distributed so that the spacing between any
-            two items (and the space to the edges) is equal.
+            space-evenly: articolele sunt distribuite astfel încât distanța dintre oricare două elemente (și spațiul până la margini) să fie egală.
           </li>
         </ul>
       </div>
@@ -178,29 +164,22 @@
     </div>
     <h4>align-items</h4>
     <p>
-      This defines the default behavior for how flex items are laid out along
-      the cross axis on the current line. Think of it as the justify-content
-      version for the cross-axis (perpendicular to the main-axis).
+      Aceasta definește comportamentul implicit pentru modul în care elementele flexibile sunt așezate de-a lungul axei transversale pe linia curentă. Gândiți-vă la aceasta ca la versiunea de conținut justificat pentru axa transversală (perpendiculară pe axa principală).
     </p>
     <div class="containerImage">
       <div class="text">
         <ul>
           <li>
-            stretch (default): stretch to fill the container (still respect
-            min-width/max-width)
+            stretch (default): întindeți pentru a umple recipientul (respectați totuși min-width/max-width.)
           </li>
           <li>
-            flex-start / start / self-start: items are placed at the start of
-            the cross axis. The difference between these is subtle, and is about
-            respecting the flex-direction rules or the writing-mode rules.
+            flex-start / start / self-start: articolele sunt plasate la începutul axei transversale. Diferența dintre acestea este subtilă și se referă la respectarea regulilor de direcție flexibilă sau a regulilor modului de scriere.
           </li>
           <li>
-            flex-end / end / self-end: items are placed at the end of the cross
-            axis. The difference again is subtle and is about respecting
-            flex-direction rules vs. writing-mode rules.
+            flex-end / end / self-end: articolele sunt plasate la capătul axei transversale. Diferența este din nou subtilă și se referă la respectarea regulilor de direcție flexibilă față de regulile modului de scriere.
           </li>
-          <li>center: items are centered in the cross-axis</li>
-          <li>baseline: items are aligned such as their baselines align</li>
+          <li>center: elementele sunt centrate pe axa transversală.</li>
+          <li>baseline: elementele sunt aliniate, cum ar fi liniile lor de bază aliniate.</li>
         </ul>
       </div>
       <div>
@@ -211,41 +190,31 @@
     </div>
     <h4>align-content</h4>
     <p>
-      This aligns a flex container’s lines within when there is extra space in
-      the cross-axis, similar to how justify-content aligns individual items
-      within the main-axis.
+      Acest lucru aliniază liniile unui container flexibil atunci când există spațiu suplimentar pe axa transversală, similar modului în care justify-content aliniază articolele individuale în cadrul axei principale.
     </p>
     <div class="containerImage">
       <div class="text">
         <ul>
           <li>
-            normal (default): items are packed in their default position as if
-            no value was set.
+            normal (default): articolele sunt împachetate în poziția lor implicită, ca și cum nu ar fi setată nicio valoare.
           </li>
           <li>
-            flex-start / start: items packed to the start of the container. The
-            (more supported) flex-start honors the flex-direction while start
-            honors the writing-mode direction.
+            flex-start / start: articolele ambalate până la începutul containerului. Flex-start (mai acceptat) onorează direcția flex, în timp ce start onorează direcția modului de scriere.
           </li>
           <li>
-            flex-end / end: items packed to the end of the container. The (more
-            support) flex-end honors the flex-direction while end honors the
-            writing-mode direction.
+            flex-end / end: articolele ambalate până la capătul containerului. flex-end (mai mult suport) onorează direcția flex, în timp ce end onorează direcția modului de scriere.
           </li>
-          <li>center: items centered in the container</li>
+          <li>center: articole centrate în container.</li>
           <li>
-            space-between: items evenly distributed; the first line is at the
-            start of the container while the last one is at the end
+            space-between: articole distribuite uniform; prima linie este la începutul containerului în timp ce ultima este la sfârșit.
           </li>
           <li>
-            space-around: items evenly distributed with equal space around each
-            line
+            space-around: articole distribuite uniform cu spațiu egal în jurul fiecărei linii.
           </li>
           <li>
-            space-evenly: items are evenly distributed with equal space around
-            them
+            space-evenly: articolele sunt distribuite uniform cu spațiu egal în jurul lor.
           </li>
-          <li>stretch: lines stretch to take up the remaining space</li>
+          <li>stretch: articolele sunt distribuite uniform cu spațiu egal în jurul lor.</li>
         </ul>
       </div>
       <div>
@@ -259,25 +228,165 @@
     </div>
     <h4>gap, row-gap, column-gap</h4>
     <p>
-      The gap property explicitly controls the space between flex items. It
-      applies that spacing only between items not on the outer edges.
+      Proprietatea gap controlează în mod explicit spațiul dintre elementele flexibile. Se aplică acea distanță numai între articole, nu pe marginile exterioare.
     </p>
     <div class="containerImage">
       <div class="text">
         <p>
-          The behavior could be thought of as a minimum gutter, as if the gutter
-          is bigger somehow (because of something like justify-content:
-          space-between;) then the gap will only take effect if that space would
-          end up smaller.
+          Comportamentul ar putea fi gândit ca un jgheab minim, ca și cum jgheabul ar fi mai mare (din cauza a ceva de genul justify-content: space-between;) atunci decalajul va avea efect numai dacă acel spațiu ar ajunge mai mic.
         </p>
         <p>
-          It is not exclusively for flexbox, gap works in grid and multi-column
-          layout as well.
+          Nu este exclusiv pentru flexbox, gap funcționează și în aspectul grilă și cu mai multe coloane.
         </p>
       </div>
       <div>
         <img src="displayFlexbox15.png" />
       </div>
     </div>
+    <h3>
+      Proprietăți pentru copii (articole flexibile):</h3>
+    <h4>order</h4>
+    <div class="containerImage">
+      <div class="text">
+        <p>
+În mod implicit, elementele flexibile sunt așezate în ordinea sursei. Cu toate acestea, proprietatea order controlează ordinea în care apar în containerul flexibil.
+        </p>
+        <p>Articolele cu aceeași comandă revin la comanda sursă.</p>
+      </div>
+      <div>
+        <img src="displayFlexbox16.png" />
+      </div>
+    </div>
+    <h4>flex-grow</h4>
+    <p>
+      Aceasta definește capacitatea unui element flexibil de a crește dacă este necesar. Acceptă o valoare fără unitate care servește drept proporție. Dictează ce cantitate din spațiul disponibil în interiorul containerului flexibil ar trebui să ocupe articolul.
+    </p>
+    <div class="containerImage">
+      <div class="text">
+        <p>
+          Dacă toate articolele au flex-grow setat la 1, spațiul rămas din container va fi distribuit în mod egal tuturor copiilor. Dacă unul dintre copii are valoarea 2, acel copil ar ocupa de două ori mai mult spațiu decât oricare dintre ceilalți (sau va încerca, cel puțin).
+        </p>
+        <p>
+          Numerele negative sunt nevalide.</p>
+        </div>
+        <div>
+          <img src="displayFlexbox17.png" />
+        </div>
+      </div>
+    </div>
+    <h4>flex-shrink</h4>
+    <div class="containerImage">
+      <div class="text">
+        <p>Aceasta definește capacitatea unui element flexibil de a se micșora dacă este necesar. Numerele negative sunt nevalide.</p>
+      </div>
+      <div>
+        <img src="displayFlexbox18.png">
+      </div>
+    </div>
+    <h4>flex-basis</h4>
+    <div class="containerImage">
+      <div class="text">
+        <p>Dacă este setat la 0, spațiul suplimentar din jurul conținutului nu este luat în considerare. Dacă este setat la automat, spațiul suplimentar este distribuit pe baza valorii sale de creștere flexibilă. Vedeți acest grafic.</p>
+        </div>
+        <div>
+          <img src="displayFlexbox19.png">
+        </div>
+        </div>
+        <p>Aceasta definește dimensiunea implicită a unui element înainte ca spațiul rămas să fie distribuit. Poate fi o lungime (de exemplu, 20%, 5rem etc.) sau un cuvânt cheie. Cuvântul cheie auto înseamnă „uitați-vă la proprietatea mea de lățime sau înălțime” (care a fost făcut temporar de cuvântul cheie de dimensiune principală până când a fost depreciat). Cuvântul cheie de conținut înseamnă „dimensionați-l în funcție de conținutul articolului” - acest cuvânt cheie nu este încă bine acceptat, așa că este greu de testat și mai greu de știut ce fac frații săi max-content, min-content și fit-content.</p>
+        <h4>flex</h4>
+        <div class="containerImage">
+          <div class="text">
+            <p>
+              Aceasta este prescurtarea pentru flex-grow, flex-shrink și flex-base combinate. Al doilea și al treilea parametri (flex-shrink și flex-basis) sunt opționali. Valoarea implicită este 0 1 auto, dar dacă o setați cu o singură valoare numerică, cum ar fi flex: 5;, asta schimbă flex-basis la 0%, deci este ca și cum setați flex-grow: 5; flex-contractie: 1; flex-bază: 0%;.</p>
+          </div>
+          <div>
+              <img src="displayFlexbox20.png">
+          </div>
+        </div>
+        <p>Se recomandă să utilizați această proprietate prescurtată în loc să setați proprietățile individuale. Stenografia stabilește celelalte valori în mod inteligent.</p>
+    <h4>align-self</h4> 
+      <div class="containerImage">
+        <div class="text">
+          <p>Acest lucru permite alinierea implicită (sau cea specificată de align-items) să fie înlocuită pentru elementele flexibile individuale.
+          </p>
+          <p>
+            Consultați explicația elementelor de aliniere pentru a înțelege valorile disponibile.</p>
+        </div>
+        <div>
+         <img src="displayFlex22.png"
+        </div>
+        </div>
+      </div> 
+    <p>
+      Rețineți că float, clear și vertical-align nu au niciun efect asupra unui element flexibil.</p>
+      <h2>CSS Media Queries</h2>
+      <p>Interogările media pot modifica aspectul (și chiar comportamentul) unui site web sau a unei aplicații pe baza unui set de condiții potrivite despre dispozitivul, browserul sau setările de sistem ale utilizatorului.</p>
+      <div class="containerImage">
+        <div class="text">
+          <p>Interogările CSS Media sunt o modalitate de a viza browserul după anumite caracteristici, caracteristici și preferințe ale utilizatorului, apoi aplicați stiluri sau rulați alt cod pe baza acestor lucruri. Poate că cele mai frecvente interogări media din lume sunt cele care vizează anumite intervale de vizualizare și aplică stiluri personalizate, care au dat naștere întregii idei de design responsive.</p>
+        </div>
+        <div>
+          <img src="CSSmediaQ1.png">
+        </div>
+      </div>
+      <p>Există o mulțime de alte lucruri pe care le putem viza în afară de lățimea ferestrei de vizualizare. Aceasta ar putea fi rezoluția ecranului, orientarea dispozitivului, preferința sistemului de operare sau chiar mai mult dintr-o mulțime de lucruri pe care le putem interoga și folosi pentru a stila conținutul.</p>
+      <h3>Anatomy of a Media Query</h3>
+      <p>Acum că am văzut mai multe exemple de unde pot fi folosite interogări media, să le deosebim și să vedem ce fac de fapt.</p>
+      <h4>@media</h4>
+      <div class="containerImage">
+        <div class="text">
+          <p>Primul ingredient dintr-o rețetă de interogare media este însăși regula @media, care este una dintre multele reguli CSS. De ce @media atrage toată atenția? Deoarece este adaptat tipului de media cu care este vizualizat un site, ce caracteristici acceptă acel tip de media și operatori care pot fi combinați pentru a combina și potrivi condiții simple și complexe deopotrivă.</p>
+        </div>
+        <div>
+          <img src="CSSmediaQ2.png">
+        </div>
+      </div>
+      <h4>Media types</h4>
+      <div class="containerImage">
+        <div class="text">
+          <p>Ce tip de media încercăm să vizam? În multe (dacă nu în cele mai multe) cazuri, veți vedea o valoare de ecran folosită aici, ceea ce are sens, deoarece multe dintre tipurile de media pe care încercăm să le potrivim sunt dispozitive cu ecrane atașate la ele.</p>
+        </div>
+        <div>
+          <img src="CSSmediaQ4.png">
+        </div>
+      </div>
+      <p>Dar ecranele nu sunt singurul tip de media pe care îl putem viza, desigur. Avem câteva, printre care:</p>
+      <ul>
+        <li>all: Se potrivește cu toate dispozitivele.</li>
+        <li>print: Potrivește documentele care sunt vizualizate într-o previzualizare de tipărire sau orice suport media care descompune conținutul în pagini destinate tipăririi.</li>
+        <li>screen: Potrivește dispozitivele cu un ecran</li>
+        <li>speech: Potrivește dispozitivele care citesc conținutul în mod audibil, cum ar fi un cititor de ecran. Acesta înlocuiește tipul auditiv depreciat de la nivelul 4 al interogărilor media.</li>
+      </ul>
+      <h4>Media features</h4>
+      <p>Odată ce definim tipul de media pe care încercăm să-l potrivim, putem începe să definim ce caracteristici încercăm să-l potrivim. Am analizat o mulțime de exemple care potrivesc ecranele cu lățimea, unde ecranul este tipul și atât lățimea minimă, cât și lățimea maximă sunt caracteristici cu valori specifice.</p>
+      <h4>Operators</h4>
+      <p>Interogările media acceptă operatori logici, cum ar fi multe limbaje de programare, astfel încât să putem potrivi tipurile media în funcție de anumite condiții. Regula @media este ea însăși un operator logic care, practic, afirmă că „dacă” următoarele tipuri și caracteristici se potrivesc, atunci faceți unele lucruri.</p>
+      <div class="containerImage">
+        <div class="text">
+          <p>And: Dar putem folosi operatorul and dacă vrem să țintim ecrane într-un interval de lățimi:</p>
+        </div>
+        <div>
+          <img src="CSSmediaQ5.png">
+        </div>
+      </div>
+      <br>
+      <div class="containerImage">
+        <div class="text">
+          <p>Or (or comma-separated): De asemenea, putem separa caracteristicile prin virgulă ca o modalitate de a folosi un operator sau pentru a le potrivi pe altele:</p>
+        </div>
+        <div>
+          <img src="CSSmediaQ6.png">
+        </div>
+      </div>
+      <br>
+      <div class="containerImage">
+        <div class="text">
+          <p>Not: 
+            Poate că vrem să țintim dispozitivele prin ceea ce acestea nu acceptă sau nu se potrivesc. Această declarație elimină culoarea de fundal a corpului atunci când dispozitivul este o imprimantă și poate afișa doar o culoare.</p>
+        </div>
+        <div>
+          <img src="CSSmediaQ7.png">
+        </div>
+      </div>
   </body>
 </html>
